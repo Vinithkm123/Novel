@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Creative Nature Login</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(#a8e6cf, #dcedc1);
+      text-align: center;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
+      padding: 20px;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+    }
+
+    .login-box {
+      background: white;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+      width: 300px;
+      text-align: center;
+    }
+
+    input {
+      width: 90%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #81c784;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+    #dashboard {
+      display: none;
+      max-width: 800px;
+      padding: 20px;
+    }
+
+    #kannada-text {
+      font-size: 20px;
+      color: #333;
+      background: white;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      line-height: 1.8;
+      white-space: pre-line;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2 id="main-heading">Welcome to Vinith Novels 🌿</h2>
+
+    <div class="login-box" id="login-box">
+      <input type="text" id="username" placeholder="Username">
+      <input type="password" id="password" placeholder="Password">
+      <button onclick="login()">Login</button>
+    </div>
+
+    <div id="dashboard">
+      <p id="kannada-text">
+ಮೂರು ದಿನದ ಜೀವನ  
+ಮಾಸುಹೋಗುವ ಯೌವ್ವನ  
+ಸಮಸ್ಯೆಗಳ ಜನನ  
+ಪರಿಹಾರಕ್ಕೆ ಹೆದರಿದ ಮೈಮನ  
+ಕಷ್ಟ ಸುಖಗಳ ಈ ಯಾನ  
+ಎದುರಿಸಿದರೆ ಸನ್ಮಾನ  
+ಇಲ್ಲದಿದ್ದರೆ ಅವಮಾನ  
+— ವಿನಿತ್
+      </p>
+    </div>
+  </div>
+
+  <script>
+    function login() {
+      const username = document.getElementById("username").value.trim();
+      const password = document.getElementById("password").value.trim();
+
+      if (username === "vinith" && password === "12345") {
+        document.getElementById("login-box").style.display = "none";
+        document.getElementById("dashboard").style.display = "block";
+        document.getElementById("main-heading").textContent = "My Novel";
+      } else {
+        alert("Invalid username or password. Try again!");
+      }
+    }
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
